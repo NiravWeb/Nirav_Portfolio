@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nirav Rana — Creative Technologist</title>
+  <link rel="shortcut icon" href="favicon.jpeg" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div id="cursor"></div>
+  <div id="cursor-follower"></div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-logo">NR</div>
+    <ul class="nav-links">
+      <li><a href="#projects">Work</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact" class="nav-cta">Connect</a></li>
+    </ul>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════ HERO ══ -->
+  <section id="hero">
+    <canvas id="star-canvas"></canvas>
+
+    <div id="rolodex-container">
+      <div id="rolodex">
+        <!-- Card 1 -->
+        <div class="rolo-card" data-index="0">
+          <span class="card-label">01 / IDENTITY</span>
+          <h1 class="card-name">Nirav<br><em>Rana</em></h1>
+          <p class="card-role">Full Stack Developer</p>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Card 2 -->
+        <div class="rolo-card" data-index="1">
+          <span class="card-label">02 / CRAFT</span>
+          <h1 class="card-name">Creative<br><em>Technologist</em></h1>
+          <p class="card-role">Building at the intersection of design & code</p>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Card 3 -->
+        <div class="rolo-card" data-index="2">
+          <span class="card-label">03 / PHILOSOPHY</span>
+          <h1 class="card-name">Code is<br><em>Poetry</em></h1>
+          <p class="card-role">Django · GSAP · Three.js · Experience Design</p>
+          <div class="card-glow"></div>
+        </div>
+      </div>
+      <div id="rolodex-shadow"></div>
+    </div>
+
+    <div id="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ PROJECTS ══ -->
+  <section id="projects">
+    <div id="museum-track">
+
+      <div class="museum-panel" data-depth="0">
+        <div class="panel-inner">
+          <div class="panel-preview">
+            <div class="preview-img p1"></div>
+            <div class="panel-overlay"></div>
+          </div>
+          <div class="panel-meta">
+            <span class="panel-num">01</span>
+            <h2 class="panel-title">Bliss<br><em>Ethnic Wear</em></h2>
+            <p class="panel-desc">A full-stack e-commerce platform with Django, featuring dynamic invoice generation, WeasyPrint PDF rendering, and a cinematic brown-gold design language.</p>
+            <div class="panel-tags">
+              <span>Django</span><span>WeasyPrint</span><span>PostgreSQL</span><span>TailwindCSS</span>
+            </div>
+            <a href="#" class="panel-link">View Project <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="museum-panel" data-depth="1">
+        <div class="panel-inner">
+          <div class="panel-preview">
+            <div class="preview-img p2"></div>
+            <div class="panel-overlay"></div>
+          </div>
+          <div class="panel-meta">
+            <span class="panel-num">02</span>
+            <h2 class="panel-title">Order<br><em>Intelligence</em></h2>
+            <p class="panel-desc">Real-time order management dashboard with advanced filtering, bulk operations, and analytics — designed for high-volume fashion retail operations.</p>
+            <div class="panel-tags">
+              <span>Python</span><span>REST API</span><span>Chart.js</span><span>Redis</span>
+            </div>
+            <a href="#" class="panel-link">View Project <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="museum-panel" data-depth="2">
+        <div class="panel-inner">
+          <div class="panel-preview">
+            <div class="preview-img p3"></div>
+            <div class="panel-overlay"></div>
+          </div>
+          <div class="panel-meta">
+            <span class="panel-num">03</span>
+            <h2 class="panel-title">Cinematic<br><em>UI Systems</em></h2>
+            <p class="panel-desc">A component library built on GSAP and Three.js — delivering immersive web experiences with GPU-accelerated animations and physics simulations.</p>
+            <div class="panel-tags">
+              <span>GSAP</span><span>Three.js</span><span>WebGL</span><span>Motion</span>
+            </div>
+            <a href="#" class="panel-link">View Project <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="museum-panel" data-depth="3">
+        <div class="panel-inner">
+          <div class="panel-preview">
+            <div class="preview-img p4"></div>
+            <div class="panel-overlay"></div>
+          </div>
+          <div class="panel-meta">
+            <span class="panel-num">04</span>
+            <h2 class="panel-title">API<br><em>Architecture</em></h2>
+            <p class="panel-desc">Scalable RESTful microservices with JWT auth, rate limiting, and auto-generated OpenAPI documentation. Handles 10k+ req/min with graceful degradation.</p>
+            <div class="panel-tags">
+              <span>FastAPI</span><span>Docker</span><span>Nginx</span><span>Celery</span>
+            </div>
+            <a href="#" class="panel-link">View Project <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /museum-track -->
+
+    <div id="museum-progress">
+      <div id="museum-progress-bar"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ SKILLS ══ -->
+  <section id="skills">
+    <div class="skills-header">
+      <span class="section-eyebrow">Arsenal</span>
+      <h2 class="section-title">Tools of the<br><em>Trade</em></h2>
+    </div>
+
+    <div id="skills-track-wrapper">
+      <div id="skills-track">
+        <div class="skills-ribbon">
+          <span class="skill-item">JavaScript</span>
+          <span class="skill-sep">✦</span>
+          <span class="skill-item highlight">Python</span>
+          <span class="skill-sep">—</span>
+          <span class="skill-item">Django</span>
+          <span class="skill-sep">✦</span>
+          <span class="skill-item highlight">GSAP</span>
+          <span class="skill-sep">—</span>
+          <span class="skill-item">Three.js</span>
+          <span class="skill-sep">✦</span>
+          <span class="skill-item">WebGL</span>
+          <span class="skill-sep">—</span>
+          <span class="skill-item highlight">UI / UX</span>
+          <span class="skill-sep">✦</span>
+          <span class="skill-item">REST APIs</span>
+          <span class="skill-sep">—</span>
+          <span class="skill-item">PostgreSQL</span>
+          <span class="skill-sep">✦</span>
+          <span class="skill-item highlight">System Design</span>
+          <span class="skill-sep">—</span>
+          <span class="skill-item">Docker</span>
+          <span class="skill-sep">✦</span>
+          <span class="skill-item">TailwindCSS</span>
+          <span class="skill-sep">—</span>
+          <span class="skill-item highlight">Git</span>
+          <span class="skill-sep">✦</span>
+          <span class="skill-item">WeasyPrint</span>
+          <span class="skill-sep">—</span>
+          <span class="skill-item">Celery</span>
+          <span class="skill-sep">✦</span>
+          <span class="skill-item highlight">Redis</span>
+          <span class="skill-sep">—</span>
+          <!-- duplicate for infinite loop -->
+          <span class="skill-item">JavaScript</span>
+          <span class="skill-sep">✦</span>
+          <span class="skill-item highlight">Python</span>
+          <span class="skill-sep">—</span>
+          <span class="skill-item">Django</span>
+          <span class="skill-sep">✦</span>
+          <span class="skill-item highlight">GSAP</span>
+          <span class="skill-sep">—</span>
+          <span class="skill-item">Three.js</span>
+          <span class="skill-sep">✦</span>
+          <span class="skill-item">WebGL</span>
+          <span class="skill-sep">—</span>
+          <span class="skill-item highlight">UI / UX</span>
+          <span class="skill-sep">✦</span>
+          <span class="skill-item">REST APIs</span>
+          <span class="skill-sep">—</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ PHYSICS TICKER ══ -->
+  <section id="about">
+    <canvas id="physics-canvas"></canvas>
+
+    <div id="ticker-wrapper">
+      <div id="ticker-ribbon">
+        <span class="ticker-text">In every line of code, discover the undeniable</span>
+        <span class="ticker-icon">◈</span>
+        <span class="ticker-text ticker-accent">Real Magic</span>
+        <span class="ticker-icon">—</span>
+        <span class="ticker-text">of crafting pure</span>
+        <span class="ticker-icon">◈</span>
+        <span class="ticker-text ticker-accent">Experiences</span>
+        <span class="ticker-icon">—</span>
+        <span class="ticker-text">that bring ideas to life</span>
+        <span class="ticker-icon">✦</span>
+        <span class="ticker-text">with code and creativity</span>
+        <span class="ticker-icon">◈</span>
+        <span class="ticker-text">Together</span>
+        <span class="ticker-icon">—</span>
+        <!-- duplicate -->
+        <span class="ticker-text">In every line of code, discover the undeniable</span>
+        <span class="ticker-icon">◈</span>
+        <span class="ticker-text ticker-accent">Real Magic</span>
+        <span class="ticker-icon">—</span>
+        <span class="ticker-text">of crafting pure</span>
+        <span class="ticker-icon">◈</span>
+        <span class="ticker-text ticker-accent">Experiences</span>
+        <span class="ticker-icon">—</span>
+        <span class="ticker-text">that bring ideas to life</span>
+        <span class="ticker-icon">✦</span>
+        <span class="ticker-text">with code and creativity</span>
+        <span class="ticker-icon">◈</span>
+        <span class="ticker-text">Together</span>
+        <span class="ticker-icon">—</span>
+      </div>
+    </div>
+
+    <div id="about-content">
+      <div class="about-col">
+        <span class="section-eyebrow">About</span>
+        <h2 class="section-title">The Person<br><em>Behind the Code</em></h2>
+      </div>
+      <div class="about-col about-bio">
+        <p>Based in <strong>Surat, India</strong> — I'm a full-stack developer who believes interfaces should feel as elegant as the logic powering them. I build products that live at the intersection of engineering precision and design sensibility.</p>
+        <p>Currently crafting <strong>Bliss Ethnic Wear</strong>, a fashion e-commerce platform where every pixel and every query is optimized with the same care.</p>
+        <div class="about-stats">
+          <div class="stat"><span class="stat-num">4+</span><span class="stat-label">Years Building</span></div>
+          <div class="stat"><span class="stat-num">12+</span><span class="stat-label">Projects Shipped</span></div>
+          <div class="stat"><span class="stat-num">∞</span><span class="stat-label">Lines of Intent</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ CONTACT ══ -->
+  <section id="contact">
+    <div class="contact-inner">
+      <span class="section-eyebrow">Let's Build</span>
+      <h2 class="contact-headline">Start a<br><em>Conversation</em></h2>
+      <a href="mailto:nirav@example.com" class="contact-email">nirav@example.com</a>
+      <div class="contact-links">
+        <a href="#">GitHub</a>
+        <span>·</span>
+        <a href="#">LinkedIn</a>
+        <span>·</span>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <span>© 2026 Nirav Rana</span>
+      <span>Crafted with intent.</span>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script type="module" src="three-scene.js"></script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
